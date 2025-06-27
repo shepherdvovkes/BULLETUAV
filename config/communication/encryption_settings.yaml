@@ -1,0 +1,33 @@
+# BULLET UAV Communication Encryption
+
+encryption:
+  algorithm: "AES"
+  key_length: 256  # bits
+  mode: "GCM"     # Galois/Counter Mode for AEAD
+  
+key_management:
+  rotation_interval: 3600  # seconds (1 hour)
+  key_derivation: "PBKDF2"
+  iterations: 100000
+  
+secure_channels:
+  command_control:
+    priority: "critical"
+    encryption: "AES-256-GCM"
+    authentication: "HMAC-SHA256"
+    
+  telemetry:
+    priority: "high"
+    encryption: "AES-128-GCM"
+    compression: true
+    
+  mesh_network:
+    priority: "medium"
+    encryption: "AES-256-CTR"
+    forward_secrecy: true
+    
+jamming_resistance:
+  frequency_hopping: true
+  hop_rate: 1000  # hops per second
+  spread_spectrum: true
+  burst_mode: true

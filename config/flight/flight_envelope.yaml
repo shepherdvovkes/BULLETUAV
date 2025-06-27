@@ -1,0 +1,22 @@
+# BULLET UAV Flight Envelope Configuration
+
+performance:
+  max_speed: 450     # km/h
+  cruise_speed: 400  # km/h
+  max_range: 100     # km
+  flight_time: 30    # minutes
+  service_ceiling: 4500 # meters
+  
+weight:
+  small_variant: 24  # kg
+  large_variant: 32  # kg
+  
+environmental:
+  temperature_min: -20 # Celsius
+  temperature_max: 55  # Celsius
+  wind_max: 25        # m/s
+  
+engine:
+  type: "turbine"
+  fuel_capacity: 8    # liters
+  consumption: 16     # liters/hour

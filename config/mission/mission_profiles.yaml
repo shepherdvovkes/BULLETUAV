@@ -1,0 +1,42 @@
+# BULLET UAV Mission Profiles
+
+shahed_intercept:
+  name: "Shahed Drone Interception"
+  priority: 80
+  engagement_range: "5-50km"
+  approach_vector: "head_on"
+  warhead_type: "fragmentation"
+  speed_profile: "maximum"
+  
+helicopter_engagement:
+  name: "Helicopter Engagement"
+  priority: 90
+  engagement_range: "10-80km"
+  approach_vector: "from_below"
+  warhead_type: "fragmentation"
+  speed_profile: "cruise_to_terminal"
+  
+air_defense_strike:
+  name: "Air Defense System Strike"
+  priority: 100
+  engagement_range: "20-100km"
+  approach_vector: "low_altitude"
+  warhead_type: "thermobaric"
+  speed_profile: "terrain_following"
+  
+maritime_strike:
+  name: "Maritime Target Strike"
+  priority: 70
+  engagement_range: "10-100km"
+  approach_vector: "sea_skimming"
+  warhead_type: "armor_piercing"
+  speed_profile: "maximum"
+  
+patrol_mission:
+  name: "Autonomous Patrol"
+  priority: 30
+  patrol_pattern: "racetrack"
+  altitude: 2000
+  speed: 300
+  duration: 30
+  search_modes: ["optical", "thermal"]

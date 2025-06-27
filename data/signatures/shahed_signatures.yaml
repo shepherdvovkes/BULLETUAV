@@ -1,0 +1,29 @@
+# Shahed Drone Signatures Database
+
+shahed_136:
+  optical:
+    length: 3.5      # meters
+    wingspan: 2.5    # meters
+    color: "dark_gray"
+    shape: "delta_wing"
+  
+  thermal:
+    engine_temp: 150  # Celsius
+    exhaust_signature: "low"
+    
+  acoustic:
+    frequency: "50-150Hz"
+    amplitude: "low"
+    
+  radar:
+    rcs: 0.01        # m²
+    
+  behavior:
+    cruise_speed: 185 # km/h
+    altitude: "50-1000m"
+    flight_pattern: "straight_line"
+    
+  vulnerabilities:
+    - "optical_tracking"
+    - "thermal_detection"
+    - "fragmentation_warhead"

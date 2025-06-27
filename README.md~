@@ -1,0 +1,28 @@
+# BULLET UAV Project
+
+## BULLET - Technologies for Eliminating Threats in the Sky and on the Ground
+
+The system was developed in accordance with the technical requirements of the Ministry of Defense of Ukraine for interceptor UAVs and strike UAVs.
+
+### Key Specifications:
+- Speed: 400+ km/h
+- Range: 100+ km
+- Flight time: 30 minutes
+- Weight: 24-32 kg
+- Turbine engine propulsion
+- AES 128/256 encryption
+- 4 warhead types: fragmentless, fragmentation, thermobaric, electromagnetic
+
+### Target Categories:
+- Shahed-type drones
+- Helicopters
+- Air defense systems (S-300/400, Buk)
+- Ground vehicles
+- Maritime targets
+
+### Launch Methods:
+- Catapult system (from pickup/runway/launcher)
+- Optional rocket booster
+- Mobile field deployment
+
+June 2025 | TУ У 30.3-43419682-001:2024

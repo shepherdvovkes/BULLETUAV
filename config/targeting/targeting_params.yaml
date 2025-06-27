@@ -1,0 +1,29 @@
+# BULLET UAV Targeting System Parameters
+
+detection:
+  range_max: 100000  # 100 km maximum detection range
+  elevation_min: -10 # degrees
+  elevation_max: 85  # degrees
+  scan_rate: 30      # Hz
+
+tracking:
+  max_targets: 20
+  track_life: 30     # seconds
+  update_rate: 50    # Hz
+  
+classification:
+  confidence_threshold: 0.75
+  
+priorities:
+  air_defense_system: 100  # S-300/400, Buk
+  helicopter: 80
+  shahed_drone: 60
+  ground_vehicle: 40
+  maritime_target: 30
+  unknown: 10
+
+engagement:
+  min_range: 500     # meters
+  max_range: 100000  # meters
+  approach_angle: 45 # degrees
+  terminal_speed: 400 # km/h
