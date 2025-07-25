@@ -155,6 +155,19 @@ optical_tracker/fast:
 	$(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/optical_tracker.dir/build.make src/sensors/CMakeFiles/optical_tracker.dir/build
 .PHONY : optical_tracker/fast
 
+#=============================================================================
+# Target rules for targets named enhanced_optical_tracker
+
+# Build rule for target.
+enhanced_optical_tracker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 enhanced_optical_tracker
+.PHONY : enhanced_optical_tracker
+
+# fast build rule for target.
+enhanced_optical_tracker/fast:
+	$(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build.make src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build
+.PHONY : enhanced_optical_tracker/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +177,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... doc"
+	@echo "... enhanced_optical_tracker"
 	@echo "... optical_tracker"
 	@echo "... targeting_core"
 .PHONY : help

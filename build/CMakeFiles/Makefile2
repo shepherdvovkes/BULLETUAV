@@ -88,10 +88,12 @@ clean: src/sensors/clean
 
 # Recursive "all" directory target.
 src/sensors/all: src/sensors/CMakeFiles/optical_tracker.dir/all
+src/sensors/all: src/sensors/CMakeFiles/enhanced_optical_tracker.dir/all
 .PHONY : src/sensors/all
 
 # Recursive "codegen" directory target.
 src/sensors/codegen: src/sensors/CMakeFiles/optical_tracker.dir/codegen
+src/sensors/codegen: src/sensors/CMakeFiles/enhanced_optical_tracker.dir/codegen
 .PHONY : src/sensors/codegen
 
 # Recursive "preinstall" directory target.
@@ -100,6 +102,7 @@ src/sensors/preinstall:
 
 # Recursive "clean" directory target.
 src/sensors/clean: src/sensors/CMakeFiles/optical_tracker.dir/clean
+src/sensors/clean: src/sensors/CMakeFiles/enhanced_optical_tracker.dir/clean
 .PHONY : src/sensors/clean
 
 #=============================================================================
@@ -160,7 +163,7 @@ CMakeFiles/doc.dir/clean:
 src/targeting/CMakeFiles/targeting_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/targeting/CMakeFiles/targeting_core.dir/build.make src/targeting/CMakeFiles/targeting_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/targeting/CMakeFiles/targeting_core.dir/build.make src/targeting/CMakeFiles/targeting_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vovkes/BULLETUAV/build/CMakeFiles --progress-num=4,5 "Built target targeting_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vovkes/BULLETUAV/build/CMakeFiles --progress-num=6,7 "Built target targeting_core"
 .PHONY : src/targeting/CMakeFiles/targeting_core.dir/all
 
 # Build rule for subdir invocation for target.
@@ -177,7 +180,7 @@ targeting_core: src/targeting/CMakeFiles/targeting_core.dir/rule
 # codegen rule for target.
 src/targeting/CMakeFiles/targeting_core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/targeting/CMakeFiles/targeting_core.dir/build.make src/targeting/CMakeFiles/targeting_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vovkes/BULLETUAV/build/CMakeFiles --progress-num=4,5 "Finished codegen for target targeting_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vovkes/BULLETUAV/build/CMakeFiles --progress-num=6,7 "Finished codegen for target targeting_core"
 .PHONY : src/targeting/CMakeFiles/targeting_core.dir/codegen
 
 # clean rule for target.
@@ -192,7 +195,7 @@ src/targeting/CMakeFiles/targeting_core.dir/clean:
 src/sensors/CMakeFiles/optical_tracker.dir/all: src/targeting/CMakeFiles/targeting_core.dir/all
 	$(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/optical_tracker.dir/build.make src/sensors/CMakeFiles/optical_tracker.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/optical_tracker.dir/build.make src/sensors/CMakeFiles/optical_tracker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vovkes/BULLETUAV/build/CMakeFiles --progress-num=2,3 "Built target optical_tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vovkes/BULLETUAV/build/CMakeFiles --progress-num=4,5 "Built target optical_tracker"
 .PHONY : src/sensors/CMakeFiles/optical_tracker.dir/all
 
 # Build rule for subdir invocation for target.
@@ -209,13 +212,45 @@ optical_tracker: src/sensors/CMakeFiles/optical_tracker.dir/rule
 # codegen rule for target.
 src/sensors/CMakeFiles/optical_tracker.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/optical_tracker.dir/build.make src/sensors/CMakeFiles/optical_tracker.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vovkes/BULLETUAV/build/CMakeFiles --progress-num=2,3 "Finished codegen for target optical_tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vovkes/BULLETUAV/build/CMakeFiles --progress-num=4,5 "Finished codegen for target optical_tracker"
 .PHONY : src/sensors/CMakeFiles/optical_tracker.dir/codegen
 
 # clean rule for target.
 src/sensors/CMakeFiles/optical_tracker.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/optical_tracker.dir/build.make src/sensors/CMakeFiles/optical_tracker.dir/clean
 .PHONY : src/sensors/CMakeFiles/optical_tracker.dir/clean
+
+#=============================================================================
+# Target rules for target src/sensors/CMakeFiles/enhanced_optical_tracker.dir
+
+# All Build rule for target.
+src/sensors/CMakeFiles/enhanced_optical_tracker.dir/all: src/targeting/CMakeFiles/targeting_core.dir/all
+	$(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build.make src/sensors/CMakeFiles/enhanced_optical_tracker.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build.make src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vovkes/BULLETUAV/build/CMakeFiles --progress-num=2,3 "Built target enhanced_optical_tracker"
+.PHONY : src/sensors/CMakeFiles/enhanced_optical_tracker.dir/all
+
+# Build rule for subdir invocation for target.
+src/sensors/CMakeFiles/enhanced_optical_tracker.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vovkes/BULLETUAV/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/sensors/CMakeFiles/enhanced_optical_tracker.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vovkes/BULLETUAV/build/CMakeFiles 0
+.PHONY : src/sensors/CMakeFiles/enhanced_optical_tracker.dir/rule
+
+# Convenience name for target.
+enhanced_optical_tracker: src/sensors/CMakeFiles/enhanced_optical_tracker.dir/rule
+.PHONY : enhanced_optical_tracker
+
+# codegen rule for target.
+src/sensors/CMakeFiles/enhanced_optical_tracker.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build.make src/sensors/CMakeFiles/enhanced_optical_tracker.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/vovkes/BULLETUAV/build/CMakeFiles --progress-num=2,3 "Finished codegen for target enhanced_optical_tracker"
+.PHONY : src/sensors/CMakeFiles/enhanced_optical_tracker.dir/codegen
+
+# clean rule for target.
+src/sensors/CMakeFiles/enhanced_optical_tracker.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build.make src/sensors/CMakeFiles/enhanced_optical_tracker.dir/clean
+.PHONY : src/sensors/CMakeFiles/enhanced_optical_tracker.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

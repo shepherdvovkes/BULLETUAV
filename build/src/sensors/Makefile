@@ -130,6 +130,44 @@ optical_tracker/fast:
 	cd /Users/vovkes/BULLETUAV/build && $(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/optical_tracker.dir/build.make src/sensors/CMakeFiles/optical_tracker.dir/build
 .PHONY : optical_tracker/fast
 
+# Convenience name for target.
+src/sensors/CMakeFiles/enhanced_optical_tracker.dir/rule:
+	cd /Users/vovkes/BULLETUAV/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/sensors/CMakeFiles/enhanced_optical_tracker.dir/rule
+.PHONY : src/sensors/CMakeFiles/enhanced_optical_tracker.dir/rule
+
+# Convenience name for target.
+enhanced_optical_tracker: src/sensors/CMakeFiles/enhanced_optical_tracker.dir/rule
+.PHONY : enhanced_optical_tracker
+
+# fast build rule for target.
+enhanced_optical_tracker/fast:
+	cd /Users/vovkes/BULLETUAV/build && $(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build.make src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build
+.PHONY : enhanced_optical_tracker/fast
+
+optical/enhanced_optical_tracker.o: optical/enhanced_optical_tracker.cpp.o
+.PHONY : optical/enhanced_optical_tracker.o
+
+# target to build an object file
+optical/enhanced_optical_tracker.cpp.o:
+	cd /Users/vovkes/BULLETUAV/build && $(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build.make src/sensors/CMakeFiles/enhanced_optical_tracker.dir/optical/enhanced_optical_tracker.cpp.o
+.PHONY : optical/enhanced_optical_tracker.cpp.o
+
+optical/enhanced_optical_tracker.i: optical/enhanced_optical_tracker.cpp.i
+.PHONY : optical/enhanced_optical_tracker.i
+
+# target to preprocess a source file
+optical/enhanced_optical_tracker.cpp.i:
+	cd /Users/vovkes/BULLETUAV/build && $(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build.make src/sensors/CMakeFiles/enhanced_optical_tracker.dir/optical/enhanced_optical_tracker.cpp.i
+.PHONY : optical/enhanced_optical_tracker.cpp.i
+
+optical/enhanced_optical_tracker.s: optical/enhanced_optical_tracker.cpp.s
+.PHONY : optical/enhanced_optical_tracker.s
+
+# target to generate assembly for a file
+optical/enhanced_optical_tracker.cpp.s:
+	cd /Users/vovkes/BULLETUAV/build && $(MAKE) $(MAKESILENT) -f src/sensors/CMakeFiles/enhanced_optical_tracker.dir/build.make src/sensors/CMakeFiles/enhanced_optical_tracker.dir/optical/enhanced_optical_tracker.cpp.s
+.PHONY : optical/enhanced_optical_tracker.cpp.s
+
 optical/optical_tracker.o: optical/optical_tracker.cpp.o
 .PHONY : optical/optical_tracker.o
 
@@ -162,7 +200,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... enhanced_optical_tracker"
 	@echo "... optical_tracker"
+	@echo "... optical/enhanced_optical_tracker.o"
+	@echo "... optical/enhanced_optical_tracker.i"
+	@echo "... optical/enhanced_optical_tracker.s"
 	@echo "... optical/optical_tracker.o"
 	@echo "... optical/optical_tracker.i"
 	@echo "... optical/optical_tracker.s"

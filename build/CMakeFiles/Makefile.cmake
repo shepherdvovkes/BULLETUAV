@@ -69,4 +69,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/doc.dir/DependInfo.cmake"
   "src/targeting/CMakeFiles/targeting_core.dir/DependInfo.cmake"
   "src/sensors/CMakeFiles/optical_tracker.dir/DependInfo.cmake"
+  "src/sensors/CMakeFiles/enhanced_optical_tracker.dir/DependInfo.cmake"
   )

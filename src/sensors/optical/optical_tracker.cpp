@@ -55,22 +55,32 @@ bool OpticalTracker::trackTarget(targeting::Target& target) {
         return false;
     }
     
+    // Check if frame is valid
+    if (frame.rows == 0 || frame.cols == 0) {
+        return false;
+    }
+    
     // If tracker is not initialized with a bounding box, we need to detect targets
     // For now, this is a placeholder implementation
     // In a real system, you would implement target detection here
     
     // Update tracker if it's been initialized
     if (m_tracker) {
-        cv::Rect bbox;
-        bool success = m_tracker->update(frame, bbox);
-        
-        if (success) {
-            // Update target position (convert from pixel coordinates to lat/lon)
-            // This is a simplified conversion - in real system you'd use proper georeferencing
-            target.lat = bbox.x + bbox.width / 2.0;  // Simplified mapping
-            target.lon = bbox.y + bbox.height / 2.0; // Simplified mapping
-            target.confidence = 0.8; // High confidence for tracked targets
-            return true;
+        try {
+            cv::Rect bbox;
+            bool success = m_tracker->update(frame, bbox);
+            
+            if (success) {
+                // Update target position (convert from pixel coordinates to lat/lon)
+                // This is a simplified conversion - in real system you'd use proper georeferencing
+                target.lat = bbox.x + bbox.width / 2.0;  // Simplified mapping
+                target.lon = bbox.y + bbox.height / 2.0; // Simplified mapping
+                target.confidence = 0.8; // High confidence for tracked targets
+                return true;
+            }
+        } catch (const cv::Exception& e) {
+            std::cerr << "OpenCV error in tracking: " << e.what() << std::endl;
+            return false;
         }
     }
     
