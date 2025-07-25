@@ -1,0 +1,9 @@
+/Users/vovkes/BULLETUAV/build/CMakeFiles/doc.dir
+/Users/vovkes/BULLETUAV/build/CMakeFiles/edit_cache.dir
+/Users/vovkes/BULLETUAV/build/CMakeFiles/rebuild_cache.dir
+/Users/vovkes/BULLETUAV/build/src/targeting/CMakeFiles/targeting_core.dir
+/Users/vovkes/BULLETUAV/build/src/targeting/CMakeFiles/edit_cache.dir
+/Users/vovkes/BULLETUAV/build/src/targeting/CMakeFiles/rebuild_cache.dir
+/Users/vovkes/BULLETUAV/build/src/sensors/CMakeFiles/optical_tracker.dir
+/Users/vovkes/BULLETUAV/build/src/sensors/CMakeFiles/edit_cache.dir
+/Users/vovkes/BULLETUAV/build/src/sensors/CMakeFiles/rebuild_cache.dir

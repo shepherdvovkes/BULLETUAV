@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/vovkes/BULLETUAV/build/cmake_install.cmake",
+		"/Users/vovkes/BULLETUAV/build/src/targeting/cmake_install.cmake",
+		"/Users/vovkes/BULLETUAV/build/src/sensors/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtargeting_core.a CMakeFiles/targeting_core.dir/core/targeting_core.cpp.o
+/usr/bin/ranlib libtargeting_core.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc liboptical_tracker.a CMakeFiles/optical_tracker.dir/optical/optical_tracker.cpp.o
+/usr/bin/ranlib liboptical_tracker.a
